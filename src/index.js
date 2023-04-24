@@ -4,8 +4,14 @@ import { ThemeProvider } from 'styled-components';
 import { App } from 'components/App';
 
 const theme = {
-  dark: {},
-  light: {},
+  dark: {
+    primary: '#fff',
+    bg: '#000',
+  },
+  light: {
+    primary: '#000',
+    bg: '#fff',
+  },
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

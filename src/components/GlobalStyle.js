@@ -3,6 +3,11 @@ import 'modern-normalize';
 import img from '../img/cap.jpg';
 
 export const GlobalStyle = createGlobalStyle`
+
+*{
+	box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -32,5 +37,9 @@ ul, ol {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+a{
+	text-decoration: none;
 }
 `;
