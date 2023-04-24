@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/KAS/static/css/main.c3d5249d.css",
+    "main.js": "/KAS/static/js/main.01a30112.js",
+    "index.html": "/KAS/index.html",
+    "main.c3d5249d.css.map": "/KAS/static/css/main.c3d5249d.css.map",
+    "main.01a30112.js.map": "/KAS/static/js/main.01a30112.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c3d5249d.css",
+    "static/js/main.01a30112.js"
+  ]
+}
