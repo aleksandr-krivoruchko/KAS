@@ -4,17 +4,8 @@ import { ThemeProvider } from 'styled-components';
 import { App } from 'components/App';
 
 const theme = {
-  colors: {
-    black: '#212121',
-    white: '#fff',
-    accent: 'orangered',
-  },
-  radii: {
-    xs: '2px',
-    sm: '4px',
-    md: '8px',
-    lg: '16px',
-  },
+  dark: {},
+  light: {},
 };
 
 ReactDOM.createRoot(document.getElementById('root')).render(

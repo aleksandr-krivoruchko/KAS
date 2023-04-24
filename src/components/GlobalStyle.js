@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import img from '../img/cap.jpg';
 
 export const GlobalStyle = createGlobalStyle`
 body {
@@ -9,6 +10,13 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(${img});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 code {
