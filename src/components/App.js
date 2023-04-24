@@ -4,8 +4,7 @@ import { Layout } from './Layout/Layout';
 export const App = () => {
   return (
     <Layout>
-      <div>Recipe Form</div>
-      <div>Image modal</div>
+      <div></div>
       <GlobalStyle />
     </Layout>
   );
