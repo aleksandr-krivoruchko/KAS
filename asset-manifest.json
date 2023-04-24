@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/KAS/static/css/main.c3d5249d.css",
-    "main.js": "/KAS/static/js/main.0af436c2.js",
+    "main.js": "/KAS/static/js/main.24032e54.js",
     "static/media/cap.jpg": "/KAS/static/media/cap.ca2700286da8a3ab3f2e.jpg",
+    "static/media/my-logo.png": "/KAS/static/media/my-logo.d335e7a1cf7dc58fc516.png",
     "index.html": "/KAS/index.html",
     "main.c3d5249d.css.map": "/KAS/static/css/main.c3d5249d.css.map",
-    "main.0af436c2.js.map": "/KAS/static/js/main.0af436c2.js.map"
+    "main.24032e54.js.map": "/KAS/static/js/main.24032e54.js.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.0af436c2.js"
+    "static/js/main.24032e54.js"
   ]
 }
