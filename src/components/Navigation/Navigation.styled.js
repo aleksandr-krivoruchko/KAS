@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const Navbar = styled.div`
+  /* position: fixed; */
   height: 10vh;
-  background-color: #000033;
+  background-color: ${({ theme }) => theme.bg};
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -16,12 +17,16 @@ export const ListItem = styled.li`
 `;
 
 export const Link = styled.a`
-  color: #44ddee;
+  font-size: 36px;
+  font-weight: 400;
+  /* font-family: 'Courier New'; */
+  letter-spacing: 0.2rem;
+  color: ${({ theme }) => theme.text};
   :hover {
-    color: #ffb7ce;
-    text-decoration: underline;
+    color: ${({ theme }) => theme.hoverText};
   }
   :active {
     color: #ffb7ce;
+    text-decoration: underline;
   }
 `;

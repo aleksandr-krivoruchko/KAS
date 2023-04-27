@@ -1,33 +1,28 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
-import img from '../img/cap.jpg';
 
 export const GlobalStyle = createGlobalStyle`
-
 *{
 	box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: ${({ theme }) => theme.fontFamily}, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale; 
   width: 100vw;
   height: 100vh;
-  background-image: url(${img});
+  background-image: ${({ theme }) => theme.body};
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: fixed; 
+  ${'' /* background-color: ${({ theme }) => theme.body}; */}
+  color: ${({ theme }) => theme.text};
+  transition: all 500ms linear;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
 
 p {
   margin: 0;
@@ -42,4 +37,10 @@ ul, ol {
 a{
 	text-decoration: none;
 }
+
+ img{
+max-width: 100%;
+height: auto;
+padding: 0;
+ }
 `;

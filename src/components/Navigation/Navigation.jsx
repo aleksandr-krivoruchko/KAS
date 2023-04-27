@@ -3,7 +3,7 @@ import { Navbar, List, ListItem, Link } from './Navigation.styled';
 import { Logo } from '../Logo/Logo.jsx';
 import { Toggle } from '../Toggle/Toggle.jsx';
 
-export const Navigation = () => {
+export const Navigation = ({ themeToggler }) => {
   return (
     <Navbar>
       <Logo />
@@ -21,7 +21,7 @@ export const Navigation = () => {
           <Link href="#">Contacts</Link>
         </ListItem>
       </List>
-      <Toggle />
+      <Toggle themeToggler={themeToggler} />
     </Navbar>
   );
 };
