@@ -1,40 +1,42 @@
 import styled from 'styled-components';
 
-export const Bar = styled.div`
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px #000;
-  background: #222;
-  z-index: 1000;
+export const Section = styled.section`
+  background-color: #eee;
+  padding: 10px 5px;
 `;
 
-export const Circle = styled.svg`
-  position: relative;
-  width: 150px;
-  height: 150px;
-  z-index: 1000;
-  circle {
-    width: 100%;
-    height: 100%;
-    fill: none;
-    stroke: #191919;
-    stroke-width: 10;
-    stroke-linecap: round;
-    transform: translate(5px, 5px);
-  }
+export const Title = styled.h2`
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+  background: #232323;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
 `;
 
-export const Percent = styled.div`
-  position: relative;
-  width: 150px;
-  height: 150px;
-  z-index: 1000;
-  h2 {
-    color: #777;
-    font-weight: 700;
-    font-size: 40px;
-    transition: 0.5s;
-  }
+export const List = styled.ul`
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+`;
+
+export const Bar = styled.li`
+  background-color: transparent;
+`;
+
+export const Text = styled.p`
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: ${({ color }) => color};
+  text-align: center;
 `;
