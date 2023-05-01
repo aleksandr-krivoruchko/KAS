@@ -2,10 +2,11 @@ import { useState } from 'react';
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './Themes';
+import { useDarkMode } from '../hooks/useDarkMode';
 import { Layout } from './Layout/Layout';
 import { Navigation } from './Navigation/Navigation';
 import { Sidebar } from './Aside/Sidebar';
-import { useDarkMode } from '../hooks/useDarkMode';
+import { MainSection } from './Main/Main';
 
 export const App = () => {
   const [theme, themeToggler, mountedComponent] = useDarkMode();
@@ -13,11 +14,12 @@ export const App = () => {
   if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>
+      <Navigation themeToggler={themeToggler} />
       <Layout>
-        <Navigation themeToggler={themeToggler} />
-        <GlobalStyle />
         <Sidebar />
+        <MainSection />
       </Layout>
+      <GlobalStyle />
     </ThemeProvider>
   );
 };

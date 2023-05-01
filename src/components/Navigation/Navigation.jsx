@@ -9,16 +9,24 @@ export const Navigation = ({ themeToggler }) => {
       <Logo />
       <List>
         <ListItem>
-          <Link href="#">Home</Link>
+          <Link href="#" data-hover="Home">
+            Home
+          </Link>
         </ListItem>
         <ListItem>
-          <Link href="#">About</Link>
+          <Link href="#" data-hover="About">
+            About
+          </Link>
         </ListItem>
         <ListItem>
-          <Link href="#">Works</Link>
+          <Link href="#" data-hover="Works">
+            Works
+          </Link>
         </ListItem>
         <ListItem>
-          <Link href="#">Contacts</Link>
+          <Link href="#" data-hover="Contacts">
+            Contacts
+          </Link>
         </ListItem>
       </List>
       <Toggle themeToggler={themeToggler} />

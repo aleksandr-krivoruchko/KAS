@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Section = styled.section`
-  background-color: #eee;
+  background-color: transparent;
   padding: 10px 5px;
 `;
 
@@ -10,13 +10,12 @@ export const Title = styled.h2`
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: #000;
   text-align: center;
   margin-bottom: 20px;
-  color: #ffffff;
-  background: #232323;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
-    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18;
+  color: ${({ theme }) => theme.sidebar.titleColor};
+  background: transparent;
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #49ff18,
+    0 0 30px #49ff18, 0 0 40px #49ff18, 0 0 55px #49ff18, 0 0 75px #49ff18; */
 `;
 
 export const List = styled.ul`

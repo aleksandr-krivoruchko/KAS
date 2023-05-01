@@ -37,9 +37,10 @@ a{
 	text-decoration: none;
 }
 
- img{
+ img {
 max-width: 100%;
 height: auto;
-padding: 0;
+margin: 0;
  }
+
 `;

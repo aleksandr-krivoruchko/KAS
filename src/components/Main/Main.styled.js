@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
-export const Aside = styled.aside`
-  width: 35%;
+export const Main = styled.main`
+  width: 62%;
   height: 100vh;
   background-color: ${({ theme }) => theme.sidebar.bg};
 `;

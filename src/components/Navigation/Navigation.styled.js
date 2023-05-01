@@ -12,20 +12,34 @@ export const List = styled.ul`
   display: flex;
   gap: 30px;
 `;
-export const ListItem = styled.li`
-  padding: 5px;
-`;
+export const ListItem = styled.li``;
 
 export const Link = styled.a`
   font-size: 36px;
-  font-weight: 400;
-  /* font-family: 'Courier New'; */
-  letter-spacing: 0.2rem;
+  padding: 5px 0;
   color: ${({ theme }) => theme.text};
-  :hover {
+  text-shadow: none;
+  position: relative;
+  &::before {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    overflow: hidden;
+    padding: 5px 0;
+    max-width: 0;
+    border-bottom: 2px solid ${({ theme }) => theme.hoverText};
     color: ${({ theme }) => theme.hoverText};
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
   }
-  :active {
+  &:hover {
+    &::before {
+      max-width: 100%;
+    }
+  }
+  &:active {
     color: #ffb7ce;
     text-decoration: underline;
   }

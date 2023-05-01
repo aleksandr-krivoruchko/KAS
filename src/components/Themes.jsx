@@ -5,13 +5,19 @@ export const lightTheme = {
   body: `url(${lightImg})`,
   text: 'black',
   hoverText: 'red',
-  background: '#363537',
   fontFamily: 'Sigmar',
+  sidebar: {
+    bg: 'transparent',
+    titleColor: '#000000',
+  },
 };
 export const darkTheme = {
   body: `url("${darkImg}")`,
   text: '#44ddee',
   hoverText: '#ffb7ce',
-  bg: '#0000339',
   fontFamily: 'Anton',
+  sidebar: {
+    bg: '#232323',
+    titleColor: '#ffffff',
+  },
 };
