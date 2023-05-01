@@ -1,9 +1,15 @@
 import styled from 'styled-components';
 
-export const Navbar = styled.div`
-  /* position: fixed; */
-  height: 10vh;
+export const Header = styled.header`
+  width: 1200px;
+  margin: 0 auto;
+  position: sticky;
+  top: 0;
   background-color: ${({ theme }) => theme.bg};
+  border: 1px solid red;
+`;
+
+export const Navbar = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
