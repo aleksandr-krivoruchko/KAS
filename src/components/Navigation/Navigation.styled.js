@@ -21,7 +21,7 @@ export const List = styled.ul`
 export const ListItem = styled.li``;
 
 export const Link = styled.a`
-  font-size: 36px;
+  font-size: 28px;
   padding: 5px 0;
   color: ${({ theme }) => theme.text};
   text-shadow: none;
