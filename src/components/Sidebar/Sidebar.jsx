@@ -1,8 +1,7 @@
 import React from 'react';
 import { Aside, Title, Subtitle } from './Sidebar.styled';
-import { Photo } from '../Photo/Photo';
-import { ProgressBar } from '../ProgressBar/ProgressBar';
-import { Socialbar } from '../Socialbar/Socialbar';
+import { Photo } from '../Sidebar/Photo/Photo';
+import { Socialbar } from '../Sidebar/Socialbar/Socialbar';
 
 const hardSkills = [
   {
@@ -88,8 +87,6 @@ export const Sidebar = () => {
       <Title>Oleksandr Krivoruchko</Title>
       <Subtitle>Front-End Developer</Subtitle>
       <Socialbar />
-      {/* <ProgressBar skills={hardSkills} title="Hard Skills" /> */}
-      {/* <ProgressBar skills={softSkills} title="Soft Skills" /> */}
     </Aside>
   );
 };

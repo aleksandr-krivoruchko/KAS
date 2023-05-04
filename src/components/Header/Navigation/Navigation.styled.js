@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const Header = styled.header`
-  width: 1200px;
   margin: 0 auto;
   position: sticky;
   top: 0;
   background-color: ${({ theme }) => theme.bg};
-  border: 1px solid red;
+  padding: 10px 0;
 `;
 
 export const Navbar = styled.div`
@@ -28,8 +27,8 @@ export const Link = styled.a`
   position: relative;
   &::before {
     position: absolute;
-    top: 7px;
-    left: 0;
+    top: 6px;
+    left: -2px;
     overflow: hidden;
     padding: 5px 0;
     max-width: 0;
@@ -40,13 +39,11 @@ export const Link = styled.a`
     -moz-transition: max-width 0.5s;
     transition: max-width 0.5s;
   }
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     &::before {
       max-width: 100%;
     }
-  }
-  &:active {
-    color: #ffb7ce;
-    text-decoration: underline;
   }
 `;

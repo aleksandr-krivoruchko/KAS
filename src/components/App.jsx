@@ -3,8 +3,9 @@ import { ThemeProvider } from 'styled-components';
 import { lightTheme, darkTheme } from './Themes';
 import { useDarkMode } from '../hooks/useDarkMode';
 import { Layout } from './Layout/Layout';
-import { Navigation } from './Navigation/Navigation';
-import { Sidebar } from './Aside/Sidebar';
+import { Wrapper } from './Layout/Layout.styled';
+import { Navigation } from './Header/Navigation/Navigation';
+import { Sidebar } from './Sidebar/Sidebar';
 import { MainSection } from './Main/Main';
 
 export const App = () => {
@@ -13,10 +14,12 @@ export const App = () => {
   if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>
-      <Navigation themeToggler={themeToggler} />
       <Layout>
-        <Sidebar />
-        <MainSection />
+        <Navigation themeToggler={themeToggler} />
+        <Wrapper>
+          <Sidebar />
+          <MainSection />
+        </Wrapper>
       </Layout>
       <GlobalStyle />
     </ThemeProvider>

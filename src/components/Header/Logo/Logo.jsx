@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../img/Logo.svg';
+import logo from '../../../img/Logo.svg';
 import { LogoImg, LogoLink } from './Logo.styled';
 
 export const Logo = () => {
