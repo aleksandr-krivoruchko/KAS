@@ -9,7 +9,7 @@ export const List = styled.ul`
 export const ListItem = styled.li`
   border-radius: 50%;
   box-shadow: 0 0 0 3px ${({ theme }) => theme.sidebar.social.shadow};
-  padding: 7px;
+  padding: 10px;
   color: ${({ theme }) => theme.sidebar.social.color};
   cursor: pointer;
   -webkit-transition: color 0.3s;

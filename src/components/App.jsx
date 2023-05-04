@@ -18,7 +18,7 @@ export const App = () => {
         <Navigation themeToggler={themeToggler} />
         <Wrapper>
           <Sidebar />
-          <MainSection />
+          <MainSection></MainSection>
         </Wrapper>
       </Layout>
       <GlobalStyle />

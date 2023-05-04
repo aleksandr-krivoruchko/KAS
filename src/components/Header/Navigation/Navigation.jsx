@@ -10,22 +10,22 @@ export const Navigation = ({ themeToggler }) => {
         <Logo />
         <List>
           <ListItem>
-            <Link href="#" data-hover="Home">
+            <Link href="#home" data-hover="Home">
               Home
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="#" data-hover="About">
+            <Link href="#about" data-hover="About">
               About
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="#" data-hover="Works">
+            <Link href="#works" data-hover="Works">
               Works
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="#" data-hover="Contacts">
+            <Link href="#contacts" data-hover="Contacts">
               Contacts
             </Link>
           </ListItem>

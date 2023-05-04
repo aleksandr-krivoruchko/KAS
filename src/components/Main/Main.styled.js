@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 
 export const Main = styled.main`
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   flex: 1;
   padding: 10px;
   border-radius: 10px;
