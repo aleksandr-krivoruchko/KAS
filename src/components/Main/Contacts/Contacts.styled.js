@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Wrapper = styled.div`
+  min-height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +11,7 @@ export const Wrapper = styled.div`
   border-radius: 10px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled(motion.h1)`
   font-weight: 700;
   font-size: 44px;
   color: red;

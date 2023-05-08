@@ -3,9 +3,24 @@ import { Wrapper, Title, Text } from './Home.styled';
 
 export const Home = () => {
   return (
-    <Wrapper id="home">
-      <Title>Hello I am Fucking Developer</Title>
-      <Text>
+    <Wrapper
+      id="home"
+      initial={{ y: '-100%', rotate: 180 }}
+      animate={{ y: 0, rotate: 0 }}
+      transition={{ ease: 'easeInOut', duration: 1 }}
+    >
+      <Title
+        initial={{ x: '-100%' }}
+        animate={{ x: 0 }}
+        transition={{ ease: 'easeInOut', delay: 1, duration: 1 }}
+      >
+        Hello I am Fucking Developer
+      </Title>
+      <Text
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ ease: 'easeOut', delay: 1, duration: 2 }}
+      >
         Example no procure has painful who right teachings can great ever one
         painful. Rejects loves in rejects mistaken a chooses nor the complete
         has him, complete master one expound, because, find itself how, who.

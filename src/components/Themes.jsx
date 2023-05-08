@@ -7,7 +7,6 @@ export const lightTheme = {
   hoverText: 'tomato',
   fontFamily: 'Sigmar',
   sidebar: {
-    bg: 'transparent',
     titleColor: '#000',
     subTitleColor: 'tomato',
     textShadow: '2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c',
@@ -27,11 +26,9 @@ export const darkTheme = {
   body: `url("${darkImg}")`,
   text: '#44ddee',
   hoverText: '#fff',
-  //   fontFamily: 'Anton',
   fontFamily: 'Sigmar',
 
   sidebar: {
-    bg: '#232323',
     titleColor: '#fff',
     subTitleColor: '#44ddee',
     textShadow: '0 0 5px #fff',

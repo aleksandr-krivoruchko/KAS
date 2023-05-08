@@ -20,7 +20,7 @@ export const Navigation = ({ themeToggler }) => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="#works" data-hover="Works">
+            <Link href="#works" data-hover="Works" >
               Works
             </Link>
           </ListItem>

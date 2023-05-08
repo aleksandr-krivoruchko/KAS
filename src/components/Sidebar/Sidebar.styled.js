@@ -12,7 +12,8 @@ export const Aside = styled.aside`
   border-radius: 10px;
   -webkit-box-shadow: 11px 12px 20px 5px rgba(0, 0, 0, 0.47);
   box-shadow: 11px 12px 20px 5px rgba(0, 0, 0, 0.47);
-  background-color: ${({ theme }) => theme.sidebar.bg};
+  background-color: transparent;
+  /* background-color: ${({ theme }) => theme.sidebar.bg}; */
 `;
 export const Title = styled.h2`
   font-size: 40px;

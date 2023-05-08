@@ -4,7 +4,14 @@ import { Wrapper, Title, Text } from './About.styled';
 export const About = () => {
   return (
     <Wrapper id="about">
-      <Title>About</Title>
+      <Title
+        initial={{ x: '-100%' }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0 }}
+      >
+        About
+      </Title>
       <Text>
         Denouncing mistaken — itself — occur annoying explorer how a procure
         trivial with not extremely pursue find. Teachings not happiness fault

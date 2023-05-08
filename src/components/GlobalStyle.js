@@ -4,11 +4,12 @@ import 'modern-normalize';
 export const GlobalStyle = createGlobalStyle`
 *{
 	box-sizing: border-box;
+
 }
 
 body {
   margin: 0;
-  font-family: ${({ theme }) => theme.fontFamily}, sans-serif;
+  font-family: 'Sigmar', 'Arial', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 
   width: 100vw;
@@ -18,7 +19,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; 
-  ${'' /* background-color: ${({ theme }) => theme.body}; */}
   color: ${({ theme }) => theme.text};
   transition: all 500ms linear;
 }

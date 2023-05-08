@@ -4,6 +4,7 @@
 	"private": true,
 	"homepage": "https://aleksandr-krivoruchko.github.io/KAS/",
 	"dependencies": {
+		"framer-motion": "^10.12.8",
 		"modern-normalize": "^1.1.0",
 		"react": "^18.1.0",
 		"react-circular-progressbar": "^2.1.0",

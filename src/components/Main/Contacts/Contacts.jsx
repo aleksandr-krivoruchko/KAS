@@ -4,7 +4,14 @@ import { Wrapper, Title, Text } from './Contacts.styled';
 export const Contacts = () => {
   return (
     <Wrapper id="contacts">
-      <Title>Contacts</Title>
+      <Title
+        initial={{ x: '-100%' }}
+        whileInView={{ x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1, delay: 0 }}
+      >
+        Contacts
+      </Title>
       <Text>
         Example no procure has painful who right teachings can great ever one
         painful. Rejects loves in rejects mistaken a chooses nor the complete
