@@ -2,12 +2,16 @@ import React from 'react';
 import { Header, Navbar, List, ListItem, Link } from './Navigation.styled';
 import { Logo } from '../Logo/Logo.jsx';
 import { Toggle } from '../Toggle/Toggle.jsx';
+import { Menu } from '../MobileMenu/Menu';
 
 export const Navigation = ({ themeToggler }) => {
   return (
     <Header>
       <Navbar>
-        <Logo />
+        <div>
+          <Menu />
+          <Logo />
+        </div>
         <List>
           <ListItem>
             <Link href="#home" data-hover="Home">
@@ -20,7 +24,7 @@ export const Navigation = ({ themeToggler }) => {
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="#works" data-hover="Works" >
+            <Link href="#works" data-hover="Works">
               Works
             </Link>
           </ListItem>

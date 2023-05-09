@@ -5,30 +5,44 @@ export const Header = styled.header`
   position: sticky;
   top: 0;
   z-index: 1;
-  /* background-color: rgba(0, 0, 0, 0.1); */
   border-radius: 10px;
   padding: 10px 0;
-  /* margin-bottom: 20px; */
   overflow: hidden;
 `;
 
 export const Navbar = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 10px;
+  @media screen and (${p => p.theme.media.tablet}) {
+    justify-content: space-around;
+  }
 `;
+
 export const List = styled.ul`
-  display: flex;
-  gap: 30px;
+  display: none;
+  @media screen and (${p => p.theme.media.tablet}) {
+    display: flex;
+    gap: 30px;
+  }
+  @media screen and (${p => p.theme.media.tablet}) {
+    gap: 40px;
+  }
 `;
+
 export const ListItem = styled.li``;
 
 export const Link = styled.a`
-  font-size: 28px;
+  font-size: 24px;
   padding: 5px 0;
   color: ${({ theme }) => theme.text};
   text-shadow: none;
   position: relative;
+  @media screen and (${p => p.theme.media.desktop}) {
+    font-size: 30px;
+  }
+
   &.active &::before {
     max-width: 100%;
     -webkit-transition: max-width 0.5s;

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Aside = styled.aside`
+  display: none;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   position: sticky;
@@ -13,7 +14,9 @@ export const Aside = styled.aside`
   -webkit-box-shadow: 11px 12px 20px 5px rgba(0, 0, 0, 0.47);
   box-shadow: 11px 12px 20px 5px rgba(0, 0, 0, 0.47);
   background-color: transparent;
-  /* background-color: ${({ theme }) => theme.sidebar.bg}; */
+  @media screen and (${p => p.theme.media.desktop}) {
+    display: block;
+  }
 `;
 export const Title = styled.h2`
   font-size: 40px;

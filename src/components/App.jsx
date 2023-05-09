@@ -1,6 +1,6 @@
 import { GlobalStyle } from './GlobalStyle';
 import { ThemeProvider } from 'styled-components';
-import { lightTheme, darkTheme } from './Themes';
+import { theme } from './Themes';
 import { useDarkMode } from '../hooks/useDarkMode';
 import { Layout } from './Layout/Layout';
 import { Wrapper } from './Layout/Layout.styled';
@@ -9,8 +9,8 @@ import { Sidebar } from './Sidebar/Sidebar';
 import { MainSection } from './Main/Main';
 
 export const App = () => {
-  const [theme, themeToggler, mountedComponent] = useDarkMode();
-  const themeMode = theme === 'light' ? lightTheme : darkTheme;
+  const [themeT, themeToggler, mountedComponent] = useDarkMode();
+  const themeMode = themeT === 'light' ? theme.lightTheme : theme.darkTheme;
   if (!mountedComponent) return <div />;
   return (
     <ThemeProvider theme={themeMode}>

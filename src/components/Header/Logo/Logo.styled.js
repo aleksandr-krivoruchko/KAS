@@ -3,5 +3,12 @@ import styled from 'styled-components';
 export const LogoLink = styled.a``;
 
 export const LogoImg = styled.img`
-  width: 80px;
+  display: none;
+  @media screen and (${p => p.theme.media.tablet}) {
+    display: block;
+    width: 60px;
+  }
+  @media screen and (${p => p.theme.media.desktop}) {
+    width: 80px;
+  }
 `;
