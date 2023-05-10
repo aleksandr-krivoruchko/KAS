@@ -6,7 +6,6 @@ export const Wrapper = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: azure;
   margin-bottom: 20px;
   border-radius: 10px;
 `;

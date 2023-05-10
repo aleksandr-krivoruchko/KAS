@@ -44,6 +44,8 @@ export const Link = styled.a`
     font-size: 30px;
   }
 
+  background-color: ${p => (p.active ? '#fff' : 'transparent')};
+
   &.active &::before {
     max-width: 100%;
     -webkit-transition: max-width 0.5s;

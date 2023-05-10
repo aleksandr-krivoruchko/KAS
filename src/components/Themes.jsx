@@ -1,4 +1,4 @@
-import darkImg from 'img/nord.jpg';
+import darkImg from 'img/north.jpg';
 import lightImg from 'img/paper.webp';
 
 export const theme = {
