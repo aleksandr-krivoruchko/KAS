@@ -1,5 +1,5 @@
-import darkImg from '../img/nord.jpg';
-import lightImg from '../img/paper.webp';
+import darkImg from 'img/nord.jpg';
+import lightImg from 'img/paper.webp';
 
 export const theme = {
   darkTheme: {

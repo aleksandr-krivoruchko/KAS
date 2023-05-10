@@ -32,6 +32,7 @@ export const List = styled.ul`
 `;
 
 export const ListItem = styled.li``;
+export const Box = styled.div``;
 
 export const Link = styled.a`
   font-size: 24px;

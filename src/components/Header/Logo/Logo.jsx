@@ -10,9 +10,6 @@ export const Logo = () => {
   };
   return (
     <motion.div
-      // initial={{ opacity: 0, scale: 0.5 }}
-      // animate={{ scale: [1, 0.5, 1, 0.5, 1], opacity: 1 }}
-      // transition={{ duration: 1 }}
       variants={variants}
       initial="closed"
       animate="open"

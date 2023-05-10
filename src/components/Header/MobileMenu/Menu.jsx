@@ -1,15 +1,32 @@
-import React, { useState } from 'react';
-import { MenuButton } from './Menu.styled';
-import { SlMenu } from 'react-icons/sl';
+import React from 'react';
+import { Navbar, List, ListItem, Link, BlurBox } from './Menu.styled';
+import { motion } from 'framer-motion';
 
-export const Menu = () => {
-  const [isOpen, setIsOpen] = useState(false);
+export const Menu = ({ isOpenMenu, setIsOpenMenu }) => {
+  const items = [
+    { value: 'Home', href: '#home' },
+    { value: 'About', href: '#about' },
+    { value: 'Works', href: '#works' },
+    { value: 'Contacts', href: '#contacts' },
+  ];
   return (
-    <>
-      <MenuButton type="button" onClick={prev => setIsOpen(!prev)}>
-        <SlMenu size={30} title="Mobile Menu" color="inherit" />
-      </MenuButton>
-      {isOpen && <h1>menu</h1>}
-    </>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.7 }}
+    >
+      <Navbar>
+        {/* <BlurBox /> */}
+        <List>
+          {items.map(item => (
+            <ListItem onClick={() => setIsOpenMenu(false)}>
+              <Link href={item.href} data-hover={item.value}>
+                {item.value}
+              </Link>
+            </ListItem>
+          ))}
+        </List>
+      </Navbar>
+    </motion.div>
   );
 };
