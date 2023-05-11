@@ -4,7 +4,7 @@ import { theme } from './Themes';
 import { useDarkMode } from '../hooks/useDarkMode';
 import { Layout } from './Layout/Layout';
 import { Wrapper } from './Layout/Layout.styled';
-import { Navigation } from './Header/Navigation/Navigation';
+import { HeaderSection } from './Header/Header';
 import { Sidebar } from './Sidebar/Sidebar';
 import { MainSection } from './Main/Main';
 
@@ -15,10 +15,10 @@ export const App = () => {
   return (
     <ThemeProvider theme={themeMode}>
       <Layout>
-        <Navigation themeToggler={themeToggler} />
+        <HeaderSection themeToggler={themeToggler} />
         <Wrapper>
           <Sidebar />
-          <MainSection></MainSection>
+          <MainSection />
         </Wrapper>
       </Layout>
       <GlobalStyle />

@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
-export const MenuButton = styled.button`
+export const StyledMenuButton = styled.button`
   background-color: transparent;
   border: none;
   outline: none;
   color: ${p => p.theme.text};
   margin: auto;
+  @media screen and (${p => p.theme.media.tablet}) {
+    display: none;
+  }
+`;
+
+export const Wrapper = styled.div`
+  display: block;
   @media screen and (${p => p.theme.media.tablet}) {
     display: none;
   }

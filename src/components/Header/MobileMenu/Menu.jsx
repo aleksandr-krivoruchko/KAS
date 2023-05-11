@@ -1,14 +1,9 @@
 import React from 'react';
 import { Navbar, List, ListItem, Link, BlurBox } from './Menu.styled';
 import { motion } from 'framer-motion';
+import { data } from 'data';
 
 export const Menu = ({ isOpenMenu, setIsOpenMenu }) => {
-  const items = [
-    { value: 'Home', href: '#home' },
-    { value: 'About', href: '#about' },
-    { value: 'Works', href: '#works' },
-    { value: 'Contacts', href: '#contacts' },
-  ];
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,8 +13,8 @@ export const Menu = ({ isOpenMenu, setIsOpenMenu }) => {
       <Navbar>
         {/* <BlurBox /> */}
         <List>
-          {items.map(item => (
-            <ListItem onClick={() => setIsOpenMenu(false)}>
+          {data.navItems.map(item => (
+            <ListItem key={item.href} onClick={() => setIsOpenMenu(false)}>
               <Link href={item.href} data-hover={item.value}>
                 {item.value}
               </Link>
