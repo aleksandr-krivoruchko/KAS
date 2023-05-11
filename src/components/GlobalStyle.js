@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
@@ -46,4 +46,19 @@ margin: 0;
 .active{
 	color: yellow;
 }
+`;
+
+export const Section = styled.section`
+  min-height: 100%;
+  padding: ${p => p.padding || '20px'};
+`;
+
+export const Flex = styled.div`
+  display: flex;
+  flex: ${p => p.flex || 'auto'};
+  flex-direction: ${p => p.direction || 'row'};
+  justify-content: ${p => p.justify || 'center'};
+  align-items: ${p => p.align || 'center'};
+  gap: ${({ gap }) => gap || '0'};
+  margin: ${({ margin }) => margin || '0'};
 `;

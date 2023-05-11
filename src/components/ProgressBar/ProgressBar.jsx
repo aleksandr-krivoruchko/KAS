@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { Section, Title, Bar, List, Text } from './ProgressBar.styled.js';
 import { Skill } from './Skill.jsx';
 

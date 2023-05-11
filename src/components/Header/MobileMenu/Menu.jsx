@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, List, ListItem, Link, BlurBox } from './Menu.styled';
 import { motion } from 'framer-motion';
-import { data } from 'data';
+import { navItems } from 'data/data';
 
 export const Menu = ({ isOpenMenu, setIsOpenMenu }) => {
   return (
@@ -13,7 +13,7 @@ export const Menu = ({ isOpenMenu, setIsOpenMenu }) => {
       <Navbar>
         {/* <BlurBox /> */}
         <List>
-          {data.navItems.map(item => (
+          {navItems.map(item => (
             <ListItem key={item.href} onClick={() => setIsOpenMenu(false)}>
               <Link href={item.href} data-hover={item.value}>
                 {item.value}
