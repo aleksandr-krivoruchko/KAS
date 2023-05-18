@@ -5,6 +5,19 @@ import {
   SlSocialGithub,
 } from 'react-icons/sl';
 
+import wallet from '../img/reposImages/wallet.png';
+import film from '../img/reposImages/filmoteka.png';
+import threeD from '../img/reposImages/3d.png';
+import phonebook from '../img/reposImages/phonebook.png';
+import profile from '../img/reposImages/profile.png';
+import note from '../img/reposImages/note.png';
+import web from '../img/reposImages/web.png';
+import barber from '../img/reposImages/barber.png';
+import icecream from '../img/reposImages/icecream.png';
+import todo from '../img/reposImages/todo.png';
+import movie from '../img/reposImages/movie.png';
+import greet from '../img/reposImages/greet.png';
+
 export const navItems = [
   { value: 'Home', href: '#home', active: false },
   { value: 'About', href: '#about', active: false },
@@ -114,38 +127,123 @@ export const softSkills = [
 export const myWorks = [
   {
     id: 1,
-    title: 'Phonebook',
+    title: 'Wallet',
     text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
-    img: '../img/bars.jpg',
+    img: wallet,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/WALLET',
+      live: 'https://team-project-wallet.netlify.app/',
+    },
   },
   {
     id: 2,
-    title: 'Phonebook',
-    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
-    img: '../img/bars.jpg',
+    title: 'Filmoteka',
+    text: 'Example no procure has painful who right teachings can great ever one painful. ',
+    img: film,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/FILMOTEKA',
+      live: 'https://kostusta.github.io/filmoteka-team-project-js/',
+    },
   },
   {
     id: 3,
-    title: 'Phonebook',
+    title: '3D website',
     text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
-    img: '../img/bars.jpg',
+    img: threeD,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/Portfolio',
+      live: 'https://3d-portfolio-site.netlify.app/',
+    },
   },
   {
     id: 4,
     title: 'Phonebook',
     text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
-    img: '../img/bars.jpg',
+    img: phonebook,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/PHONE-BOOK',
+      live: 'https://aleksandr-krivoruchko.github.io/PHONE-BOOK/',
+    },
   },
   {
     id: 5,
-    title: 'Phonebook',
+    title: 'Friendly profile',
     text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
-    img: '../img/bars.jpg',
+    img: profile,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/friendly-profile',
+      live: 'https://kak-horosho-tu-menya-znaesh.netlify.app/',
+    },
   },
   {
     id: 6,
-    title: 'Phonebook',
+    title: 'Notebook',
     text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
-    img: '../img/bars.jpg',
+    img: note,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/Notebook',
+      live: 'https://my-notes-vite-app.netlify.app/',
+    },
+  },
+  {
+    id: 7,
+    title: 'Webstudio',
+    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
+    img: web,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/WEB-STUDIO',
+      live: 'https://aleksandr-krivoruchko.github.io/WEB-STUDIO',
+    },
+  },
+  {
+    id: 8,
+    title: 'Barber Shop',
+    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
+    img: barber,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/BARBER-SHOP',
+      live: 'https://aleksandr-krivoruchko.github.io/BARBER-SHOP',
+    },
+  },
+  {
+    id: 9,
+    title: 'Ice Cream Shop',
+    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
+    img: icecream,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/ICE-CREAM',
+      live: 'https://ardeewest.github.io/ice-cream-team-project/',
+    },
+  },
+  {
+    id: 10,
+    title: 'Todo List',
+    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
+    img: todo,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/TODOLIST',
+      live: 'https://aleksandr-krivoruchko.github.io/TODOLIST/index.html',
+    },
+  },
+  {
+    id: 11,
+    title: 'Movie Search',
+    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
+    img: movie,
+    links: {
+      source:
+        'https://github.com/aleksandr-krivoruchko/goit-react-hw-05-movies',
+      live: 'https://aleksandr-krivoruchko.github.io/goit-react-hw-05-movies/',
+    },
+  },
+  {
+    id: 10,
+    title: 'Greeting',
+    text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
+    img: greet,
+    links: {
+      source: 'https://github.com/aleksandr-krivoruchko/Greeting',
+      live: 'https://aleksandr-krivoruchko.github.io/Greeting/',
+    },
   },
 ];
