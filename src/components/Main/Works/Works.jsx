@@ -20,13 +20,38 @@ export const Works = () => {
   //       console.error();
   //     }
   //   }, []);
+
+  const listVariants = {
+    visible: i => ({
+      opacity: 1,
+      y: 0,
+      transition: { delay: i * 0.3 },
+    }),
+    hidden: {
+      opacity: 0,
+      y: -100,
+    },
+  };
+
   return (
-    <StyledSection id="works">
-      <Title>Works</Title>
+    <StyledSection
+      id="works"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ amount: 0.8, once: true }}
+    >
+      {/* <Title>Works</Title> */}
       {/* <CardTest /> */}
       <List>
         {myWorks.map(item => (
-          <ListItem key={item.id}>
+          <ListItem
+            key={item.id}
+            whileHover={{ scale: 1.03 }}
+            variants={listVariants}
+            initial="hidden"
+            whileInView="visible"
+            custom={item.id}
+          >
             <Card
               id={item.id}
               title={item.title}

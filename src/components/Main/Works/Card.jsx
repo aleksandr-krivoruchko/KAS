@@ -22,7 +22,7 @@ export const Card = ({ id, title, text, img, href }) => {
         <LinksWrapper>
           <CardLink />
         </LinksWrapper>
-        <CardText>{text}</CardText>
+        {/* <CardText>{text}</CardText> */}
       </CardContent>
     </StyleCard>
   );

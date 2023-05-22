@@ -237,7 +237,7 @@ export const myWorks = [
     },
   },
   {
-    id: 10,
+    id: 12,
     title: 'Greeting',
     text: 'Example no procure has painful who right teachings can great ever one painful. Rejects loves in rejects mistaken a chooses nor the complete has him, complete master one expound, because, find itself how',
     img: greet,

@@ -4,9 +4,14 @@ import { motion } from 'framer-motion';
 import { Flex } from '../../GlobalStyle';
 import Tilt from 'react-vanilla-tilt';
 
-export const StyledSection = styled(Section)`
+// export const StyledSection = styled(motion.Section)`
+//   border-radius: 10px;
+// `;
+
+export const StyledSection = styled(motion.section)`
+  min-height: 100%;
   border-radius: 10px;
-  border: 1px solid red;
+  padding: ${p => p.padding || '20px'};
 `;
 
 export const Title = styled.h1`
@@ -22,7 +27,7 @@ export const List = styled.ul`
   align-items: center;
   flex-wrap: wrap;
 `;
-export const ListItem = styled.li``;
+export const ListItem = styled(motion.li)``;
 
 export const StyleCard = styled(Tilt)`
   /* width: 300px !important;
@@ -36,7 +41,7 @@ export const StyleCard = styled(Tilt)`
   border-left: 1px solid rgba(255, 255, 255, 0.5) !important;
   backdrop-filter: blur(3px) !important;
 
-  :hover {
+  /* :hover {
     ::after {
       content: 'qqq';
       position: absolute;
@@ -49,7 +54,7 @@ export const StyleCard = styled(Tilt)`
       transform: translate(-50%, -50%);
       cursor: pointer;
     }
-  }
+  } */
 `;
 export const CardContent = styled.div`
   padding: 10px;
