@@ -43,9 +43,35 @@ max-width: 100%;
 height: auto;
 margin: 0;
  }
-.active{
-	color: yellow;
+
+
+.link{
+	  font-size: 24px;
+  padding: 5px 0;
+  color: ${({ theme }) => theme.text};
+  text-shadow: none;
+  position: relative;
+
 }
+.link::before {
+    position: absolute;
+    top: 6px;
+    left: -2px;
+    overflow: hidden;
+    padding: 5px 0;
+    max-width: 0;
+    border-bottom: 2px solid ${({ theme }) => theme.hoverText};
+    color: ${({ theme }) => theme.hoverText};
+    content: attr(data-hover);
+    -webkit-transition: max-width 0.5s;
+    -moz-transition: max-width 0.5s;
+    transition: max-width 0.5s;
+  }
+
+.link:hover::before, .link.active::before {
+	max-width: 100%;
+}
+
 `;
 
 export const Section = styled.section`

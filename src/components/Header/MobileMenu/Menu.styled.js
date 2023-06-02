@@ -19,11 +19,12 @@ export const Wrapper = styled.div`
 `;
 
 export const Navbar = styled.div`
+  width: 30%;
   position: fixed;
   top: 55px;
   left: 0;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.2);
   padding: 20px;
   @media screen and (${p => p.theme.media.tablet}) {
     display: none;

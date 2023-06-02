@@ -19,10 +19,10 @@ import movie from '../img/reposImages/movie.png';
 import greet from '../img/reposImages/greet.png';
 
 export const navItems = [
-  { value: 'Home', href: '#home', active: false },
-  { value: 'About', href: '#about', active: false },
-  { value: 'Works', href: '#works', active: false },
-  { value: 'Contacts', href: '#contacts', active: false },
+  { id: 1, value: 'Home', href: '#home', active: false },
+  { id: 2, value: 'About', href: '#about', active: false },
+  { id: 3, value: 'Works', href: '#works', active: false },
+  { id: 4, value: 'Contacts', href: '#contacts', active: false },
 ];
 
 export const socialItems = [

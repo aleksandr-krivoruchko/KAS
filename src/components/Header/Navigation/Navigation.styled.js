@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const Navbar = styled.div`
   display: flex;
@@ -21,9 +22,11 @@ export const List = styled.ul`
   }
 `;
 
-export const ListItem = styled.li``;
+export const ListItem = styled(motion.li)`
+  /* background-color: ${p => (p.activeLink ? 'yellow' : 'white')}; */
+`;
 
-export const Link = styled.a`
+export const Link = styled(motion.a)`
   font-size: 24px;
   padding: 5px 0;
   color: ${({ theme }) => theme.text};
@@ -33,9 +36,7 @@ export const Link = styled.a`
     font-size: 30px;
   }
 
-  background-color: ${p => (p.active ? '#fff' : 'transparent')};
-
-  &:active &::before {
+  &.active::before {
     max-width: 100%;
     -webkit-transition: max-width 0.5s;
     -moz-transition: max-width 0.5s;
