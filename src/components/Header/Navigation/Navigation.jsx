@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, List, ListItem, Link } from './Navigation.styled';
 import { navItems } from 'data/data';
 import activeLink from '../../../helpers/activeLink';
+
 export const Navigation = () => {
   return (
     <Navbar>

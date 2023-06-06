@@ -1,18 +1,6 @@
 import styled from 'styled-components';
-import { Section } from '../../GlobalStyle';
 import { motion } from 'framer-motion';
-import { Flex } from '../../GlobalStyle';
 import Tilt from 'react-vanilla-tilt';
-
-// export const StyledSection = styled(motion.Section)`
-//   border-radius: 10px;
-// `;
-
-export const StyledSection = styled(motion.section)`
-  min-height: 100%;
-  border-radius: 10px;
-  padding: ${p => p.padding || '20px'};
-`;
 
 export const Title = styled.h1`
   font-weight: 700;

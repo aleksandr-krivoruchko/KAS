@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import { Flex } from '../../GlobalStyle';
-import { StyledSection, Title, List, ListItem } from './Works.styled';
+import React from 'react';
+import { Section } from '../../GlobalStyle';
+import { List, ListItem } from './Works.styled';
 import { Card } from './Card';
-import { CardTest } from './CardTest';
 import { myWorks } from 'data/data';
 
 export const Works = () => {
@@ -34,14 +33,12 @@ export const Works = () => {
   };
 
   return (
-    <StyledSection
+    <Section
       id="works"
       initial="hidden"
       whileInView="visible"
       viewport={{ amount: 0.8, once: true }}
     >
-      {/* <Title>Works</Title> */}
-      {/* <CardTest /> */}
       <List>
         {myWorks.map(item => (
           <ListItem
@@ -62,6 +59,6 @@ export const Works = () => {
           </ListItem>
         ))}
       </List>
-    </StyledSection>
+    </Section>
   );
 };

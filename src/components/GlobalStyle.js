@@ -1,5 +1,6 @@
-import styled, { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
+import styled, { createGlobalStyle } from 'styled-components';
+import { motion } from 'framer-motion';
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -74,9 +75,10 @@ margin: 0;
 
 `;
 
-export const Section = styled.section`
+export const Section = styled(motion.section)`
   min-height: 100%;
   padding: ${p => p.padding || '20px'};
+  background-color: ${p => p.bgc || 'transparent'};
 `;
 
 export const Flex = styled.div`

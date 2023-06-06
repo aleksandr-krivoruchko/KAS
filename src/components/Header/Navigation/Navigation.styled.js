@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
-export const Navbar = styled.div`
+export const Navbar = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
