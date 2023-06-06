@@ -24,21 +24,16 @@ export const Works = () => {
     visible: i => ({
       opacity: 1,
       y: 0,
-      transition: { delay: i * 0.3 },
+      transition: { delay: i * 0.2 },
     }),
     hidden: {
       opacity: 0,
-      y: -100,
+      y: 70,
     },
   };
 
   return (
-    <Section
-      id="works"
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ amount: 0.8, once: true }}
-    >
+    <Section id="works">
       <List>
         {myWorks.map(item => (
           <ListItem
@@ -47,6 +42,7 @@ export const Works = () => {
             variants={listVariants}
             initial="hidden"
             whileInView="visible"
+            viewport={{ amount: 0.7, once: true }}
             custom={item.id}
           >
             <Card

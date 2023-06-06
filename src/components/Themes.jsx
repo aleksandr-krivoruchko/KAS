@@ -6,7 +6,7 @@ export const theme = {
     media: {
       phone: '(min-width: 425px)',
       tablet: '(min-width: 768px)',
-      desktop: '(min-width: 1200px)',
+      desktop: '(min-width: 1440px)',
     },
 
     body: `url("${darkImg}")`,

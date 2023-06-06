@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { motion } from 'framer-motion';
 
 export const Navbar = styled.nav`
   display: flex;
@@ -22,11 +21,11 @@ export const List = styled.ul`
   }
 `;
 
-export const ListItem = styled(motion.li)`
+export const ListItem = styled.li`
   /* background-color: ${p => (p.activeLink ? 'yellow' : 'white')}; */
 `;
 
-export const Link = styled(motion.a)`
+export const Link = styled.a`
   font-size: 24px;
   padding: 5px 0;
   color: ${({ theme }) => theme.text};

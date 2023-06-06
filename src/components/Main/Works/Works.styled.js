@@ -14,13 +14,16 @@ export const List = styled.ul`
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px;
 `;
 export const ListItem = styled(motion.li)``;
 
 export const StyleCard = styled(Tilt)`
-  /* width: 300px !important;
-  height: 400px !important; */
+  width: 300px !important;
+  height: 500px !important;
+  padding: 0 !important;
   overflow: hidden;
+
   color: ${({ theme }) => theme.text} !important;
   background: rgba(125, 125, 0, 0.1) !important;
   box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5) !important;
@@ -44,22 +47,16 @@ export const StyleCard = styled(Tilt)`
     }
   } */
 `;
+export const ImageThumb = styled.div`
+  height: 50%;
+  overflow: hidden;
+`;
+export const CardImage = styled.img``;
+
 export const CardContent = styled.div`
-  padding: 10px;
-  text-align: center;
+  height: 50%;
+  padding: 5px;
 `;
 export const CardTitle = styled.h3``;
 export const CardText = styled.p``;
-export const ImageThumb = styled.div`
-  width: 200px;
-  height: 150px;
-  overflow: hidden;
-`;
-export const CardImage = styled.img`
-  object-fit: cover;
-  object-position: center;
-`;
-
-export const LinksWrapper = styled.div``;
-
 export const CardLink = styled.a``;
