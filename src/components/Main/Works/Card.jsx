@@ -5,22 +5,26 @@ import {
   CardContent,
   CardTitle,
   CardText,
-  ImageThumb,
-  CardImage,
   CardLink,
 } from './Works.styled';
 
+const cardVariants = {
+  in: { y: '100%' },
+  an: { y: '50%' },
+  transition: { type: 'spring', stiffness: 100, duration: 2 },
+};
+
 export const Card = ({ id, title, text, img, href }) => {
   return (
-    <StyleCard id={id}>
-      <ImageThumb>
-        <CardImage src={img} alt={title} />
-      </ImageThumb>
-      <CardContent>
+    <StyleCard id={id} initial="in" whileHover="an" img={img}>
+      <CardContent
+        variants={cardVariants}
+        transition={{ type: 'spring', stiffness: 70 }}
+      >
         <CardTitle>{title}</CardTitle>
         <CardText>{text}</CardText>
-        <CardLink href="#">git</CardLink>
-        <CardLink href="#">live</CardLink>
+        <CardLink href={href?.source}>git</CardLink>
+        <CardLink href={href?.live}>live</CardLink>
       </CardContent>
     </StyleCard>
   );

@@ -5,21 +5,6 @@ import { Card } from './Card';
 import { myWorks } from 'data/data';
 
 export const Works = () => {
-  //   const [repos, setRepos] = useState([]);
-
-  //   useEffect(() => {
-  //     const fetchData = async () => {
-  //       const data = await getRepos();
-  //       console.log(data);
-  //       setRepos(data);
-  //     };
-  //     try {
-  //       fetchData();
-  //     } catch (error) {
-  //       console.error();
-  //     }
-  //   }, []);
-
   const listVariants = {
     visible: i => ({
       opacity: 1,
@@ -50,7 +35,7 @@ export const Works = () => {
               title={item.title}
               text={item.text}
               img={item.img}
-              href={item.links?.source}
+              href={item.links}
             />
           </ListItem>
         ))}
