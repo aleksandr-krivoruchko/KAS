@@ -6,15 +6,15 @@ export const Socialbar = () => {
   return (
     <Box>
       <List>
-        {socialItems.map(item => (
-          <ListItem key={item.title}>
+        {socialItems.map(({ title, href, icon }) => (
+          <ListItem key={title}>
             <Link
-              href={item.href}
+              href={href}
               target="blank"
               rel="noopener noreferrer"
-              title={item.title}
+              title={title}
             >
-              {item.icon}
+              {icon}
             </Link>
           </ListItem>
         ))}

@@ -76,7 +76,7 @@ margin: 0;
 `;
 
 export const Section = styled(motion.section)`
-  min-height: 100%;
+  min-height: 90vh;
   padding: ${p => p.padding || '20px'};
   background-color: ${p => p.bgc || 'transparent'};
 `;

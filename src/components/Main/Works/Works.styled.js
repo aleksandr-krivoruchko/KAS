@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import Tilt from 'react-vanilla-tilt';
-import bgi from '../../../img/reposImages/cowboy.jpg';
 
 export const Title = styled.h1`
   font-weight: 700;
@@ -71,9 +69,19 @@ export const CardText = styled.p`
   margin-bottom: 20px;
   margin-bottom: 10px;
 `;
+export const Links = styled.div`
+  display: flex;
+  justify-content: space-around;
+`;
+
 export const CardLink = styled.a`
-  color: red;
-  font-size: 24px;
+  color: #44ddee;
+  font-size: 20px;
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
+  :hover {
+    color: tomato;
+    scale: 1.1;
+  }
 `;

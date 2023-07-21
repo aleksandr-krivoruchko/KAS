@@ -1,34 +1,32 @@
 import React from 'react';
 import { Section, Flex } from '../../GlobalStyle';
-import { Title, Text } from './Home.styled';
+import { Wrapper, Title, Subtitle, Text } from './Home.styled';
+import { ProgressBar } from '../../ProgressBar/ProgressBar.jsx';
+import { hardSkills, softSkills } from '../../../data/data.js';
 
 export const Home = () => {
   return (
     <Section id="home">
-      <Flex direction="column">
+      <Wrapper>
         <Title
-          initial={{ x: '-100%' }}
-          animate={{ x: 0 }}
-          transition={{ ease: 'easeInOut', delay: 1, duration: 1 }}
+          initial={{ y: '-500%' }}
+          animate={{ y: 0 }}
+          transition={{ type: 'spring', stiffness: 200, duration: 1 }}
         >
-          Hello I am Fucking Developer
+          hello <br /> everyone incoming
         </Title>
         <Text
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ ease: 'easeOut', delay: 1, duration: 2 }}
+          initial={{ opacity: 0, x: '300%' }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ ease: 'easeOut', delay: 0, duration: 1 }}
         >
-          Example no procure has painful who right teachings can great ever one
-          painful. Rejects loves in rejects mistaken a chooses nor the complete
-          has him, complete master one expound, because, find itself how, who.
-          From enjoy builder great has find consequences happiness, occur,
-          builder trivial occur itself mistaken, which praising truth to a some
-          but. Consequences but will master which right human trivial is some
-          has one painful it praising dislikes annoying obtain trivial.
-          Produces, desires nor, chooses advantage those encounter happiness not
-          advantage pleasure it truth: there nor, human system, all will.
+          I am an adequate beginner Front-End developer, looking for a full-time
+          entry level in a company to use and improve my skills in HTML, CSS,
+          JS, React and become part of a friendly and professional team
         </Text>
-      </Flex>
+        <ProgressBar title="Hard skills" skills={hardSkills} />
+        <ProgressBar title="Soft skills" skills={softSkills} />
+      </Wrapper>
     </Section>
   );
 };
