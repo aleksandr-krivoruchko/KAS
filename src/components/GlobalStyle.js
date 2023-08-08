@@ -72,8 +72,39 @@ margin: 0;
 .link:hover::before, .link.active::before {
 	max-width: 100%;
 }
-
-`;
+.aws-btn {
+  --button-default-height: 54px;
+  --button-default-font-size: 25px;
+  --button-default-border-radius: 10px;
+  --button-horizontal-padding: 20px;
+  --button-raise-level: 3px;
+  --button-hover-pressure: 2;
+  --transform-speed: 0.185s;
+  --button-primary-color: #6183ea;
+  --button-primary-color-dark: #55aaee;
+  --button-primary-color-light: #ffffff;
+  --button-primary-color-hover: #44ddee;
+  --button-primary-color-active: #2825e9;
+  --button-primary-border: 0px solid #c8d416;
+  --button-secondary-color: #fefc81;
+  --button-secondary-color-dark: #cbc802;
+  --button-secondary-color-light: #7f7d01;
+  --button-secondary-color-hover: #efec1f;
+  --button-secondary-color-active: #fddf1c;
+  --button-secondary-border: 2px solid #cbc802;
+  --button-anchor-color: #eccab1;
+  --button-anchor-color-dark: #6d4b29;
+  --button-anchor-color-light: #48321b;
+  --button-anchor-color-hover: #e9c2a5;
+  --button-anchor-color-active: #e4b490;
+  --button-anchor-border: 2px solid #6d4b29;
+  --button-danger-color: #3db64b;
+  --button-danger-color-dark: #d2e054;
+  --button-danger-color-light: #ffffff;
+  --button-danger-color-hover: #3aae48;
+  --button-danger-color-active: #37a343;
+  --button-danger-border: 2px solid #d2e054;
+}`;
 
 export const Section = styled(motion.section)`
   min-height: 90vh;

@@ -30,9 +30,9 @@ export const About = () => {
           consequences give pursue dislikes undertakes, happiness a laborious in
           account denouncing from, him except can denouncing. Actual truth
           praising fault must who desires resultant pleasure, painful mistaken
-          occasionally explain any exercise.{' '}
+          occasionally explain any exercise.
         </Text>
-      </Flex>{' '}
+      </Flex>
     </Section>
   );
 };

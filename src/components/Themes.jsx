@@ -26,6 +26,9 @@ export const theme = {
         shadow: '#fff',
       },
     },
+    hero: {
+      titleColor: 'rgb(57 63 79)',
+    },
     main: {
       textColor: '#f5f5f5',
     },
@@ -53,6 +56,10 @@ export const theme = {
         shadow: '#1150af',
       },
     },
+    hero: {
+      titleColor: 'rgb(210 208 215)',
+    },
+
     main: {
       textColor: '#000',
     },

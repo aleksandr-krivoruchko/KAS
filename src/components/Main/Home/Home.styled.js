@@ -3,37 +3,40 @@ import { motion } from 'framer-motion';
 
 export const Wrapper = styled(motion.div)`
   min-height: 90vh;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
-  margin-bottom: 20px;
-  border-radius: 10px;
+  padding: 50px;
 `;
 
 export const Title = styled(motion.h1)`
-  text-transform: uppercase;
-  font-size: 40px;
-  font-weight: bold;
-  text-shadow: ${p => p.theme.sidebar.textShadow};
-  text-align: center;
-  margin-bottom: 50px;
-  color: ${({ theme }) => theme.sidebar.titleColor};
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
-`;
-
-export const Subtitle = styled(motion.h3)`
   font-size: 26px;
+  text-transform: uppercase;
   font-weight: bold;
-  font-style: italic;
   text-align: center;
-  color: tomato;
   margin-bottom: 50px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    #09f1b8,
+    #00a2ff,
+    #ff00d2,
+    #fed90f
+  );
+  color: ${({ theme }) => theme.hero.titleColor};
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: calc(1em / 7);
+  margin-bottom: 50px;
+  line-break: auto;
 `;
 export const Text = styled(motion.p)`
   font-size: 26px;
-  font-weight: bold;
+  font-weight: normal;
+  letter-spacing: 0.2rem;
   text-align: center;
-  color: ${({ theme }) => theme.text};
+  color: ${({ theme }) => theme.main.textColor};
   margin-bottom: 50px;
+  line-height: 2.3rem;
+  font-style: italic;
 `;

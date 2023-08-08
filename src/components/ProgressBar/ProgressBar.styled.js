@@ -14,7 +14,7 @@ export const Title = styled.h2`
   margin-bottom: 20px;
   color: ${({ theme }) => theme.sidebar.titleColor};
   background: transparent;
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  /* text-shadow: 0 0 5px #fff, 0 0 10px #fff; */
 `;
 
 export const List = styled.ul`
@@ -39,5 +39,6 @@ export const Text = styled.p`
   font-weight: bold;
   color: ${({ color }) => color};
   text-align: center;
-  text-shadow: 0 0 5px ${({ color }) => color}, 0 0 10px ${({ color }) => color};
+  /* text-shadow: 0 0 5px ${({ color }) => color}, 0 0 10px ${({ color }) =>
+    color}; */
 `;
